@@ -48,3 +48,74 @@ Here is a structured lesson plan for learning basic electronics with hands-on pr
     5.  Remove the wire connecting the resistor to the power rail.
     6.  Connect the resistor's free leg to the potentiometer's center pin (the Wiper).
     7.  Click "Start Simulation". As you turn the potentiometer, the LED's brightness will change.
+
+## Lesson 4: Intro to Arduino & Your First Program: "Blink"
+
+*   **Concept:** Introduce the Arduino microcontroller. Explain the difference between a simple circuit and a programmable one. Cover the basic structure of an Arduino program (`setup()` and `loop()`) and the "Hello, World!" of hardware: blinking an LED with code.
+*   **Components:**
+    *   Arduino UNO
+    *   Breadboard
+    *   LED
+    *   220Ω Resistor
+*   **Tinkercad Breadboard Instructions:**
+    1.  Drag an Arduino UNO and a breadboard into the workspace.
+    2.  Connect the **5V** pin on the Arduino to the red power rail (+) on the breadboard.
+    3.  Connect the **GND** pin on the Arduino to the blue ground rail (-) on the breadboard.
+    4.  Place an LED on the breadboard. Connect its cathode (-) to the blue ground rail.
+    5.  Connect a 220Ω resistor from the LED's anode (+) to a free row on the breadboard.
+    6.  Use a wire to connect that resistor row to **digital pin 13** on the Arduino.
+*   **Code:** In Tinkercad, click the "Code" button, select "Text", and enter the following:
+    ```cpp
+    void setup() {
+      // Set pin 13 to be an output
+      pinMode(13, OUTPUT);
+    }
+
+    void loop() {
+      // Turn the LED on (HIGH is the voltage level)
+      digitalWrite(13, HIGH);
+      delay(1000); // Wait for 1000 milliseconds (1 second)
+
+      // Turn the LED off by making the voltage LOW
+      digitalWrite(13, LOW);
+      delay(1000); // Wait for 1 second
+    }
+    ```
+
+## Lesson 5: Reading Input - The Pushbutton
+
+*   **Concept:** Teach how to read a digital input (a button press). Introduce `digitalRead()` and the importance of a **pull-down resistor** to ensure the input pin reads LOW when the button isn't pressed.
+*   **Components:**
+    *   Circuit from Lesson 4
+    *   Pushbutton
+    *   10kΩ Resistor (the pull-down resistor)
+*   **Tinkercad Breadboard Instructions:**
+    1.  Start with the "Blink" circuit from Lesson 4.
+    2.  Place a pushbutton on the breadboard (straddling the center gap).
+    3.  Connect one leg of the button to the red power rail (+5V).
+    4.  Connect the leg directly across the gap to **digital pin 2** on the Arduino.
+    5.  Place the 10kΩ resistor from that same leg (the one connected to pin 2) to the blue ground rail (-). This "pulls" the pin to a LOW state.
+*   **Code:**
+    ```cpp
+    const int buttonPin = 2;
+    const int ledPin = 13;
+    int buttonState = 0; // variable for reading the pushbutton status
+
+    void setup() {
+      pinMode(ledPin, OUTPUT);
+      pinMode(buttonPin, INPUT);
+    }
+
+    void loop() {
+      // read the state of the pushbutton value
+      buttonState = digitalRead(buttonPin);
+
+      // check if the pushbutton is pressed.
+      // if it is, the buttonState is HIGH:
+      if (buttonState == HIGH) {
+        digitalWrite(ledPin, HIGH);
+      } else {
+        digitalWrite(ledPin, LOW);
+      }
+    }
+    ```
