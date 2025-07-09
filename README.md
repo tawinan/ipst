@@ -1,105 +1,105 @@
-# Basic Electronics and Arduino Curriculum
+# หลักสูตรอิเล็กทรอนิกส์เบื้องต้นและ Arduino
 
-Here is a structured lesson plan for learning basic electronics with hands-on projects using Tinkercad.
+นี่คือแผนการสอนที่มีโครงสร้างสำหรับการเรียนรู้อิเล็กทรอนิกส์เบื้องต้นพร้อมโครงงานภาคปฏิบัติโดยใช้ Tinkercad
 
-## Lesson 1: Your First Circuit - Lighting an LED
+## บทที่ 1: วงจรแรกของคุณ - การทำให้ LED สว่าง
 
-*   **Concept:** Introduce the fundamental components of a circuit: a power source, a path, a load, and the concepts of Voltage, Current, and Resistance (Ohm's Law).
-*   **Components:**
-    *   Breadboard
-    *   9V Battery
+*   **แนวคิด:** แนะนำส่วนประกอบพื้นฐานของวงจร: แหล่งจ่ายไฟ, เส้นทาง, โหลด และแนวคิดของแรงดัน, กระแส และความต้านทาน (กฎของโอห์ม)
+*   **ส่วนประกอบ:**
+    *   แผงวงจร (Breadboard)
+    *   แบตเตอรี่ 9V
     *   LED (Light Emitting Diode)
-    *   330Ω Resistor (to protect the LED)
-*   **Tinkercad Breadboard Instructions:**
-    1.  Drag a breadboard and a 9V battery onto the workspace.
-    2.  Connect the red wire (+) from the battery to the red power rail (+) on the breadboard.
-    3.  Connect the black wire (-) from the battery to the blue power rail (-) on the breadboard.
-    4.  Place an LED on the breadboard. Note the anode (+) and cathode (-).
-    5.  Place a 330Ω resistor on the breadboard. Connect one leg to the same row as the LED's anode.
-    6.  Use a wire to connect the other leg of the resistor to the red power rail (+).
-    7.  Use a wire to connect the LED's cathode to the blue power rail (-).
-    8.  Click "Start Simulation". The LED should light up.
+    *   ตัวต้านทาน 330Ω (เพื่อป้องกัน LED)
+*   **คำแนะนำบน Tinkercad Breadboard:**
+    1.  ลากแผงวงจรและแบตเตอรี่ 9V ไปยังพื้นที่ทำงาน
+    2.  เชื่อมต่อสายสีแดง (+) จากแบตเตอรี่เข้ากับรางไฟสีแดง (+) บนแผงวงจร
+    3.  เชื่อมต่อสายสีดำ (-) จากแบตเตอรี่เข้ากับรางไฟสีน้ำเงิน (-) บนแผงวงจร
+    4.  วาง LED บนแผงวงจร สังเกตขา anode (+) และ cathode (-)
+    5.  วางตัวต้านทาน 330Ω บนแผงวงจร เชื่อมต่อขาหนึ่งเข้ากับแถวเดียวกับขา anode ของ LED
+    6.  ใช้สายไฟเชื่อมต่อขาอีกข้างของตัวต้านทานเข้ากับรางไฟสีแดง (+)
+    7.  ใช้สายไฟเชื่อมต่อขา cathode ของ LED เข้ากับรางไฟสีน้ำเงิน (-)
+    8.  คลิก "Start Simulation" LED ควรจะสว่างขึ้น
 
-## Lesson 2: Using a Switch
+## บทที่ 2: การใช้สวิตช์
 
-*   **Concept:** Introduce the idea of controlling a circuit with a switch. Explain how a switch opens and closes a circuit.
-*   **Components:**
-    *   Components from Lesson 1
-    *   Pushbutton
-*   **Tinkercad Breadboard Instructions:**
-    1.  Start with the circuit from Lesson 1.
-    2.  Place a pushbutton on the breadboard, making sure it straddles the center gap.
-    3.  Remove the wire connecting the resistor to the power rail.
-    4.  Connect a wire from the red power rail (+) to one of the pushbutton's legs.
-    5.  Connect the resistor's free leg to the pushbutton leg directly across the gap.
-    6.  Click "Start Simulation". The LED will only light up when you press the button.
+*   **แนวคิด:** แนะนำแนวคิดการควบคุมวงจรด้วยสวิตช์ อธิบายว่าสวิตช์เปิดและปิดวงจรอย่างไร
+*   **ส่วนประกอบ:**
+    *   ส่วนประกอบจากบทที่ 1
+    *   Pushbutton (ปุ่มกด)
+*   **คำแนะนำบน Tinkercad Breadboard:**
+    1.  เริ่มต้นด้วยวงจรจากบทที่ 1
+    2.  วางปุ่มกดบนแผงวงจร ตรวจสอบให้แน่ใจว่าคร่อมช่องว่างตรงกลาง
+    3.  ถอดสายไฟที่เชื่อมต่อตัวต้านทานกับรางไฟออก
+    4.  เชื่อมต่อสายไฟจากรางไฟสีแดง (+) ไปยังขาหนึ่งของปุ่มกด
+    5.  เชื่อมต่อขาที่ว่างของตัวต้านทานเข้ากับขาของปุ่มกดที่อยู่ตรงข้ามช่องว่าง
+    6.  คลิก "Start Simulation" LED จะสว่างขึ้นเมื่อคุณกดปุ่มเท่านั้น
 
-## Lesson 3: Variable Resistance with a Potentiometer
+## บทที่ 3: ความต้านทานแบบแปรผันด้วย Potentiometer
 
-*   **Concept:** Introduce analog control. Explain how a potentiometer works as a variable resistor to control the amount of current flowing to the LED, thus changing its brightness.
-*   **Components:**
-    *   Components from Lesson 1 (use a 220Ω resistor)
+*   **แนวคิด:** แนะนำการควบคุมแบบอนาล็อก อธิบายว่า Potentiometer ทำงานเป็นตัวต้านทานแบบปรับค่าได้เพื่อควบคุมปริมาณกระแสที่ไหลไปยัง LED ซึ่งจะเปลี่ยนความสว่างของมัน
+*   **ส่วนประกอบ:**
+    *   ส่วนประกอบจากบทที่ 1 (ใช้ตัวต้านทาน 220Ω)
     *   Potentiometer (10kΩ)
-*   **Tinkercad Breadboard Instructions:**
-    1.  Start with the basic LED circuit from Lesson 1 (using a 220Ω resistor).
-    2.  Place a potentiometer on the breadboard.
-    3.  Connect a wire from the red power rail (+) to Terminal 1 of the potentiometer.
-    4.  Connect a wire from the blue power rail (-) to Terminal 2 of the potentiometer.
-    5.  Remove the wire connecting the resistor to the power rail.
-    6.  Connect the resistor's free leg to the potentiometer's center pin (the Wiper).
-    7.  Click "Start Simulation". As you turn the potentiometer, the LED's brightness will change.
+*   **คำแนะนำบน Tinkercad Breadboard:**
+    1.  เริ่มต้นด้วยวงจร LED พื้นฐานจากบทที่ 1 (ใช้ตัวต้านทาน 220Ω)
+    2.  วาง Potentiometer บนแผงวงจร
+    3.  เชื่อมต่อสายไฟจากรางไฟสีแดง (+) ไปยังขา Terminal 1 ของ Potentiometer
+    4.  เชื่อมต่อสายไฟจากรางไฟสีน้ำเงิน (-) ไปยังขา Terminal 2 ของ Potentiometer
+    5.  ถอดสายไฟที่เชื่อมต่อตัวต้านทานกับรางไฟออก
+    6.  เชื่อมต่อขาที่ว่างของตัวต้านทานเข้ากับขาตรงกลางของ Potentiometer (Wiper)
+    7.  คลิก "Start Simulation" เมื่อคุณหมุน Potentiometer ความสว่างของ LED จะเปลี่ยนไป
 
-## Lesson 4: Intro to Arduino & Your First Program: "Blink"
+## บทที่ 4: แนะนำ Arduino และโปรแกรมแรกของคุณ: "Blink"
 
-*   **Concept:** Introduce the Arduino microcontroller. Explain the difference between a simple circuit and a programmable one. Cover the basic structure of an Arduino program (`setup()` and `loop()`) and the "Hello, World!" of hardware: blinking an LED with code.
-*   **Components:**
+*   **แนวคิด:** แนะนำไมโครคอนโทรลเลอร์ Arduino อธิบายความแตกต่างระหว่างวงจรธรรมดากับวงจรที่สามารถโปรแกรมได้ ครอบคลุมโครงสร้างพื้นฐานของโปรแกรม Arduino (`setup()` และ `loop()`) และ "Hello, World!" ของฮาร์ดแวร์: การทำให้ LED กะพริบด้วยโค้ด
+*   **ส่วนประกอบ:**
     *   Arduino UNO
-    *   Breadboard
+    *   แผงวงจร (Breadboard)
     *   LED
-    *   220Ω Resistor
-*   **Tinkercad Breadboard Instructions:**
-    1.  Drag an Arduino UNO and a breadboard into the workspace.
-    2.  Connect the **5V** pin on the Arduino to the red power rail (+) on the breadboard.
-    3.  Connect the **GND** pin on the Arduino to the blue ground rail (-) on the breadboard.
-    4.  Place an LED on the breadboard. Connect its cathode (-) to the blue ground rail.
-    5.  Connect a 220Ω resistor from the LED's anode (+) to a free row on the breadboard.
-    6.  Use a wire to connect that resistor row to **digital pin 13** on the Arduino.
-*   **Code:** In Tinkercad, click the "Code" button, select "Text", and enter the following:
+    *   ตัวต้านทาน 220Ω
+*   **คำแนะนำบน Tinkercad Breadboard:**
+    1.  ลาก Arduino UNO และแผงวงจรไปยังพื้นที่ทำงาน
+    2.  เชื่อมต่อพิน **5V** บน Arduino เข้ากับรางไฟสีแดง (+) บนแผงวงจร
+    3.  เชื่อมต่อพิน **GND** บน Arduino เข้ากับรางไฟสีน้ำเงิน (-) บนแผงวงจร
+    4.  วาง LED บนแผงวงจร เชื่อมต่อขา cathode (-) เข้ากับรางไฟสีน้ำเงิน
+    5.  เชื่อมต่อตัวต้านทาน 220Ω จากขา anode (+) ของ LED ไปยังแถวที่ว่างบนแผงวงจร
+    6.  ใช้สายไฟเชื่อมต่อแถวของตัวต้านทานนั้นไปยัง **digital pin 13** บน Arduino
+*   **โค้ด:** ใน Tinkercad คลิกปุ่ม "Code" เลือก "Text" และป้อนโค้ดต่อไปนี้:
     ```cpp
     void setup() {
-      // Set pin 13 to be an output
+      // กำหนดให้พิน 13 เป็นเอาต์พุต
       pinMode(13, OUTPUT);
     }
 
     void loop() {
-      // Turn the LED on (HIGH is the voltage level)
+      // เปิด LED (HIGH คือระดับแรงดันไฟฟ้า)
       digitalWrite(13, HIGH);
-      delay(1000); // Wait for 1000 milliseconds (1 second)
+      delay(1000); // รอ 1000 มิลลิวินาที (1 วินาที)
 
-      // Turn the LED off by making the voltage LOW
+      // ปิด LED โดยทำให้แรงดันไฟฟ้าเป็น LOW
       digitalWrite(13, LOW);
-      delay(1000); // Wait for 1 second
+      delay(1000); // รอ 1 วินาที
     }
     ```
 
-## Lesson 5: Reading Input - The Pushbutton
+## บทที่ 5: การอ่านค่าอินพุต - ปุ่มกด (Pushbutton)
 
-*   **Concept:** Teach how to read a digital input (a button press). Introduce `digitalRead()` and the importance of a **pull-down resistor** to ensure the input pin reads LOW when the button isn't pressed.
-*   **Components:**
-    *   Circuit from Lesson 4
-    *   Pushbutton
-    *   10kΩ Resistor (the pull-down resistor)
-*   **Tinkercad Breadboard Instructions:**
-    1.  Start with the "Blink" circuit from Lesson 4.
-    2.  Place a pushbutton on the breadboard (straddling the center gap).
-    3.  Connect one leg of the button to the red power rail (+5V).
-    4.  Connect the leg directly across the gap to **digital pin 2** on the Arduino.
-    5.  Place the 10kΩ resistor from that same leg (the one connected to pin 2) to the blue ground rail (-). This "pulls" the pin to a LOW state.
-*   **Code:**
+*   **แนวคิด:** สอนวิธีการอ่านค่าอินพุตดิจิทัล (การกดปุ่ม) แนะนำ `digitalRead()` และความสำคัญของ **pull-down resistor** เพื่อป้องกันไม่ให้พินอินพุต "ลอย" เมื่อไม่ได้กดปุ่ม
+*   **ส่วนประกอบ:**
+    *   วงจรจากบทที่ 4
+    *   Pushbutton (ปุ่มกด)
+    *   ตัวต้านทาน 10kΩ (สำหรับ pull-down)
+*   **คำแนะนำบน Tinkercad Breadboard:**
+    1.  เริ่มต้นด้วยวงจร "Blink" จากบทที่ 4
+    2.  วางปุ่มกดบนแผงวงจร (คร่อมช่องว่างตรงกลาง)
+    3.  เชื่อมต่อขาหนึ่งของปุ่มเข้ากับรางไฟสีแดง (+5V)
+    4.  เชื่อมต่อขาตรงข้ามช่องว่างไปยัง **digital pin 2** บน Arduino
+    5.  วางตัวต้านทาน 10kΩ จากขาเดียวกันนั้น (ที่เชื่อมต่อกับพิน 2) ไปยังรางกราวด์สีน้ำเงิน (-) การทำเช่นนี้จะ "ดึง" สถานะของพินให้เป็น LOW
+*   **โค้ด:**
     ```cpp
     const int buttonPin = 2;
     const int ledPin = 13;
-    int buttonState = 0; // variable for reading the pushbutton status
+    int buttonState = 0; // ตัวแปรสำหรับอ่านสถานะของปุ่มกด
 
     void setup() {
       pinMode(ledPin, OUTPUT);
@@ -107,11 +107,11 @@ Here is a structured lesson plan for learning basic electronics with hands-on pr
     }
 
     void loop() {
-      // read the state of the pushbutton value
+      // อ่านค่าสถานะของปุ่มกด
       buttonState = digitalRead(buttonPin);
 
-      // check if the pushbutton is pressed.
-      // if it is, the buttonState is HIGH:
+      // ตรวจสอบว่าปุ่มถูกกดหรือไม่
+      // ถ้าถูกกด สถานะของปุ่ม (buttonState) จะเป็น HIGH:
       if (buttonState == HIGH) {
         digitalWrite(ledPin, HIGH);
       } else {
