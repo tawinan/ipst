@@ -25,3 +25,18 @@ const char* password = "YOUR_WIFI_PASSWORD";
 3.  เปิด Serial Monitor ขึ้นมาเพื่อดู IP address ที่ ESP32 ได้รับ
 4.  เปิดเว็บเบราว์เซอร์ (บนคอมพิวเตอร์หรือมือถือที่อยู่ในเครือข่าย WiFi เดียวกัน) และเข้าไปที่ IP address นั้น
 5.  คุณจะเห็นหน้าเว็บแสดงข้อมูลจากเซ็นเซอร์!
+
+## การสร้าง WiFi Hotspot จากมือถือ
+
+หากคุณไม่มีเครือข่าย WiFi ปกติ, คุณสามารถใช้มือถือของคุณเพื่อสร้าง Hotspot ให้ ESP32 เชื่อมต่อได้:
+
+### สำหรับ iOS (iPhone)
+1.  ไปที่ **Settings** > **Personal Hotspot**
+2.  เปิด **Allow Others to Join**
+3.  ดูชื่อ WiFi (SSID) ที่แสดงบนหน้าจอ และใช้ **Wi-Fi Password** ที่ให้ไว้ในโค้ด Arduino ของคุณ
+
+### สำหรับ Android
+1.  ปัดหน้าจอลงจากด้านบนเพื่อเปิด Quick Settings และหาไอคอน **Hotspot** หรือ **Mobile Hotspot** (อาจจะต้องเข้าไปที่ **Settings** > **Network & internet** > **Hotspot & tethering**)
+2.  เปิดใช้งาน Hotspot
+3.  แตะที่การตั้งค่า Hotspot เพื่อดูหรือตั้งค่าชื่อเครือข่าย (SSID) และรหัสผ่าน
+4.  ใช้ชื่อและรหัสผ่านนี้ในโค้ด Arduino ของคุณ
