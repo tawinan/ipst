@@ -57,5 +57,6 @@
 
 ## Setting ก่อน upload code
 *   ที่เมนู Tools เลือก USB CDC On Boot "Enabled"
-*   หลัง upload code แล้วให้กด icon วงกลมมุมบนขวาของหน้าต่าง เพื่อแสดง Serial Mornitor ซึ่งจะแสดงค่าที่อ่านได้จาก sensor ออกมา
+*   หลัง upload code แล้วให้กด icon วงกลมมุมบนขวาของหน้าต่าง เพื่อแสดง Serial Monitor ซึ่งจะแสดงค่าที่อ่านได้จาก sensor ออกมา
+*   ถ้าตัวหนังสือที่พิมพ์ออกมาเป็นตัวอักษรแปลก ๆ อ่านไม่รู้เรื่อง ให้เลือก option 115200 baud ที่หน้าต่าง Serial Monitor 
 
