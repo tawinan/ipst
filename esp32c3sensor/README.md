@@ -17,10 +17,8 @@
 เซ็นเซอร์ทั้งสองตัวนี้ใช้วิธีการสื่อสารแบบ I2C เราจึงสามารถเชื่อมต่อเข้ากับบัส I2C เดียวกันได้
 
 1.  **เชื่อมต่อไฟ:**
-    *   เชื่อมต่อขา **3V3** ของ ESP32-C3 เข้ากับรางไฟบวก (+) บน Breadboard
-    *   เชื่อมต่อขา **GND** ของ ESP32-C3 เข้ากับรางไฟลบ (-) บน Breadboard
-    *   เชื่อมต่อขา **VIN** หรือ **VCC** ของ AHT20 และ BMP280 เข้ากับรางไฟบวก (+)
-    *   เชื่อมต่อขา **GND** ของ AHT20 และ BMP280 เข้ากับรางไฟลบ (-)
+    *   เชื่อมต่อขา **3V3** ของ ESP32-C3 เข้ากับขา VDD ของ sensor module
+    *   เชื่อมต่อขา **GND** ของ ESP32-C3 เข้ากับขา GND ของ sensor module
 
 2.  **เชื่อมต่อสายข้อมูล I2C:**
     *   ESP32-C3 Supermini ใช้ **GPIO 8** เป็น **SDA** และ **GPIO 9** เป็น **SCL** โดยปริยาย
@@ -56,3 +54,8 @@
 *   `Adafruit AHTX0`
 *   `Adafruit BMP280 Library`
 *   `Adafruit Unified Sensor` (เป็น dependency ของไลบรารีอื่น)
+
+## Setting ก่อน upload code
+*   ที่เมนู Tools เลือก USB CDC On Boot "Enabled"
+*   หลัง upload code แล้วให้กด icon วงกลมมุมบนขวาของหน้าต่าง เพื่อแสดง Serial Mornitor ซึ่งจะแสดงค่าที่อ่านได้จาก sensor ออกมา
+
