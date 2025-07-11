@@ -21,7 +21,7 @@ bool ledState = true; // Start with LED ON (HIGH)
 void OnDataRecv(const esp_now_recv_info * info, const uint8_t *incomingData, int len) {
   memcpy(&myData, incomingData, sizeof(myData));
   Serial.println("--------------------------------");
-  Serial.print("Data received from board with ID: ");
+  Serial.print("Data received from Sender ID: ");
   Serial.println(myData.id);
   Serial.print("From MAC Address: ");
   for (int i = 0; i < 6; i++) {
