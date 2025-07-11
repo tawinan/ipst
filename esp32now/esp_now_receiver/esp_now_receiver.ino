@@ -1,5 +1,6 @@
 #include <esp_now.h>
 #include <WiFi.h>
+#include <esp_wifi.h> // Needed for esp_now_recv_info_t
 
 // Define a data structure
 typedef struct struct_message {
@@ -13,13 +14,13 @@ typedef struct struct_message {
 struct_message myData;
 
 // Callback function that will be executed when data is received
-void OnDataRecv(const uint8_t * mac, const uint8_t *incomingData, int len) {
+void OnDataRecv(const esp_now_recv_info * info, const uint8_t *incomingData, int len) {
   memcpy(&myData, incomingData, sizeof(myData));
   Serial.print("Bytes received: ");
   Serial.println(len);
   Serial.print("From MAC Address: ");
   for (int i = 0; i < 6; i++) {
-    Serial.print(mac[i], HEX);
+    Serial.print(info->src_addr[i], HEX);
     if (i < 5) Serial.print(":");
   }
   Serial.println();
