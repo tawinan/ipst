@@ -1,6 +1,13 @@
-# หลักสูตรอิเล็กทรอนิกส์เบื้องต้นและ Arduino
+# การเรียนแบบมี AI เป็นผู้ช่วย
+* Google AI Studio
+   * https://aistudio.google.com/
+* Teachable Machine
+   * https://teachablemachine.withgoogle.com/    
+
+# อิเล็กทรอนิกส์เบื้องต้น Microcontroller และ IoT 
 
 นี่คือแผนการสอนที่มีโครงสร้างสำหรับการเรียนรู้อิเล็กทรอนิกส์เบื้องต้นพร้อมโครงงานภาคปฏิบัติโดยใช้ Tinkercad
+https://www.tinkercad.com/circuits
 
 ## บทที่ 1: วงจรแรกของคุณ - การทำให้ LED สว่าง
 
